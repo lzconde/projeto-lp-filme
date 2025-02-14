@@ -21,11 +21,20 @@ body{
     align-items: center;
     justify-content: space-between;
 
+    @media (max-width: 768px){
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
     .film-info{
         color: v.$fontColor;
         background-color: v.$headerColor;
         padding: 40px;
         border-radius: 3px;
+
+        @media (max-width: 768px){
+            margin-top: 10px;
+        }
 
         h2{
             margin-bottom: 6px;
@@ -46,6 +55,10 @@ body{
         &__buttons{
             display: flex;
             margin-top: 20px;
+
+            @media (max-width: 768px){
+                justify-content: center;
+            }
 
             button{
                 padding: 10px 20px;
@@ -89,6 +102,14 @@ body{
         height: 2px;
         background-color: v.$secondaryColor;
         margin: 20px 0;
+    }
+
+    .trailer iframe{
+
+        @media (max-width: 768px){
+            width: 100%;
+            height: 300px;
+        }
     }
 }
 
