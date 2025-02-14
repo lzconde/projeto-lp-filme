@@ -28,11 +28,74 @@ body{
         border-radius: 3px;
 
         h2{
-            margin-bottom: 20px;
+            margin-bottom: 6px;
         }
 
         p{
             margin-bottom: 4px;
         }
+
+        .rate{
+            font-weight: bold;
+        }
+
+        &__description{
+            margin-bottom: 30px !important;
+        }
+
+        &__buttons{
+            display: flex;
+            margin-top: 20px;
+
+            button{
+                padding: 10px 20px;
+                border: none;
+                border-radius: 3px;
+                cursor: pointer;
+                transition: 0.3s;
+                margin-left: 6px;
+
+                &:first-child{
+                    background-color: v.$primaryColor;
+                    color: v.$fontColor;
+                }
+
+                &:last-child{
+                    background-color: v.$secondaryColor;
+                    color: v.$fontColor;
+                }
+
+                &:hover{
+                    filter: brightness(0.8);
+                }
+            }
+        }
     }
+}
+
+.container-trailer{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-top: 20px;
+
+    color: v.$fontColor;
+    text-align: center;
+
+    margin-bottom: 40px;
+
+    .line{
+        width: 100%;
+        height: 2px;
+        background-color: v.$secondaryColor;
+        margin: 20px 0;
+    }
+}
+
+footer{
+    background-color: v.$headerColor;
+    padding: 20px;
+    text-align: center;
+    color: v.$fontColor;
+    margin-top: 30px;
 }
