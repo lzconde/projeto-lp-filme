@@ -15,4 +15,24 @@ body{
     max-width: 1600px;
     margin: 0 auto;
     padding: 0 20px;
+    margin-top: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .film-info{
+        color: v.$fontColor;
+        background-color: v.$headerColor;
+        padding: 40px;
+        border-radius: 3px;
+
+        h2{
+            margin-bottom: 20px;
+        }
+
+        p{
+            margin-bottom: 4px;
+        }
+    }
 }
