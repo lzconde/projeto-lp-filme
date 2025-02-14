@@ -1,0 +1,18 @@
+@use 'variaveis' as v;
+
+.header{
+    background-color: v.$headerColor;
+    padding: 30px;
+    text-align: center;
+
+    &__logo{
+        color: v.$fontColor;
+        font-size: 40px;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        span{
+            color: v.$primaryColor;
+        }
+    }
+}
